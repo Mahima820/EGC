@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @job.role %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @job.project %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @job.description %>
+</p>
+<div class="modal_app_container">
+	<div class="modal_apply">
+		<a href="#" class="close">X</a>
+			<span class="modal_app_heading">
+			Resume and Cover Letter Upload
+			</span>
+			<form action="#">
+				<input type="text" placeholder="Resume"><br>
+				<input type="text" placeholder="Cover Letter"><br>
+				<input type="apply" class="btnApply" value="APPLY">
+			</form>
+	</div>
+</div>
+<%= link_to 'Apply', edit_job_path(@job) %>
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

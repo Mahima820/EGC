@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Resume:</strong>
+  <%= @applied_job.resume %>
+</p>
+
+<p>
+  <strong>Cover letter:</strong>
+  <%= @applied_job.cover_letter %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @applied_job.text %>
+</p>
+
+<%= link_to 'Edit', edit_applied_job_path(@applied_job) %> |
+<%= link_to 'Back', applied_jobs_path %>
