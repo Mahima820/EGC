@@ -1,3 +1,6 @@
+<title>Modal Popup Box</title>
+
+<body>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -14,19 +17,29 @@
   <strong>Description:</strong>
   <%= @job.description %>
 </p>
-<div class="modal_app_container">
-	<div class="modal_apply">
-		<a href="#" class="close">X</a>
-			<span class="modal_app_heading">
-			Resume and Cover Letter Upload
-			</span>
-			<form action="#">
-				<input type="text" placeholder="Resume"><br>
-				<input type="text" placeholder="Cover Letter"><br>
-				<input type="apply" class="btnApply" value="APPLY">
-			</form>
-	</div>
-</div>
-<%= link_to 'Apply', edit_job_path(@job) %>
 <%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', jobs_path %>
+<h1 style="text-align:center; font-size:50px; color:#fff">Modal Popup Box Login Form</h1>
+
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:200px; margin-top:200px; margin-left:160px;">
+Apply</button>
+
+<div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="1.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center">Modal Popup Box</h1>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Resume" name="uname">
+      <input type="text" placeholder="Cover Letter" name="psw">        
+      <button type="submit">Submit</button>     
+ 
+    </div>
+    
+  </form>
+</body>
