@@ -1,6 +1,7 @@
 body {
-  background-color: #fff;
-  color: #333;
+  .body {
+  background: linear-gradient(black, #2B0963, #080E4E);
+  color: white;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -81,4 +82,5 @@ div {
 
 label {
   display: block;
+  }
 }

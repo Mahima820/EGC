@@ -10,8 +10,11 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
+    <%= form.label :project %>
+    <%= form.text_area :project, id: :applied_job_project %>
+  </div>
+ <div class="field">
     <%= form.label :resume %>
     <%= form.text_area :resume, id: :applied_job_resume %>
   </div>
@@ -20,10 +23,13 @@
     <%= form.label :cover_letter %>
     <%= form.text_field :cover_letter, id: :applied_job_cover_letter %>
   </div>
-
   <div class="field">
-    <%= form.label :text %>
-    <%= form.text_field :text, id: :applied_job_text %>
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :applied_job_user_id %>
+  </div>
+  <div class="field">
+    <%= form.label :job_id %>
+    <%= form.text_field :job_id, id: :applied_job_job_id %>
   </div>
 
   <div class="actions">

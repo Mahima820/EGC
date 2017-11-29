@@ -1,13 +1,12 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Resume:</strong>
-  <%= @applied_job.resume %>
+  <%= @applied_job.user.resume %>
 </p>
 
 <p>
   <strong>Cover letter:</strong>
-  <%= @applied_job.cover_letter %>
+  <%= @applied_job.user.cover_letter %>
 </p>
 
 <p>

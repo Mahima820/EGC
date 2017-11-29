@@ -1,3 +1,88 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.body {
+	background: linear-gradient(black, #2B0963, #080E4E);
+}
+/*------------Create Account Form---------------------*/
+
+.new_user {
+  max-width: 500px;
+  min-height: 700px;
+  margin: 50px auto;
+  background-color: rgba(10,10,10,.68);
+}
+body label {
+	color: white;
+	margin-left: 30px;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, 
+button { 
+	margin-left: 30px;
+}
+input[type="file" i] {
+    align-items: baseline;
+    color: inherit;
+    text-align: start;
+    color: white;
+}
+
+
+/*------------Sign Up Background---------*/
+.SignUp {
+	background-image: asset-url('galaxy.jpg');
+	height: 100vh;
+
+}
+
+/*-------------Log In Background----------*/
+
+.LogIn{
+	background-image: asset-url('galaxy.jpg');
+	height: 100vh;
+
+}
+.LogInForm {
+  width: 500px;
+  height: 200px;
+  margin: 50px auto;
+}
+body label {
+	color: white;
+	margin-left: 30px;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, 
+button { 
+	margin-left: 30px;
+}
+input[type="file" i] {
+    align-items: baseline;
+    color: inherit;
+    text-align: start;
+    color: white;
+}
+
+/*-----------------Profile Background ------------------*/
+.background {
+  /*background-image: asset-url('EGC_profile.png');*/
+  background: linear-gradient(black, #2B0963, #080E4E);
+  height: 50%;
+  color: white;
+
+}
+.profile {
+  width: 80%;
+  margin-top: 200px;
+}
+.profile_info {
+  margin-left: 100px;
+}
+svg #Layer_1 {
+  margin-top: -800px;
+}
+
+.path{
+  margin-top: -500px; 
+}

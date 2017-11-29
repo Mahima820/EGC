@@ -10,12 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171120202128) do
+ActiveRecord::Schema.define(version: 20171127171454) do
 
   create_table "applied_jobs", force: :cascade do |t|
-    t.text "resume"
-    t.string "cover_letter"
     t.string "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "job_id"
+    t.integer "user_id"
+  end
+
+  create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -24,6 +29,10 @@ ActiveRecord::Schema.define(version: 20171120202128) do
     t.string "role"
     t.string "project"
     t.text "description"
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -33,6 +42,12 @@ ActiveRecord::Schema.define(version: 20171120202128) do
     t.string "lname"
     t.string "location"
     t.string "interest"
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.integer "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.text "resume"
+    t.string "cover_letter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false

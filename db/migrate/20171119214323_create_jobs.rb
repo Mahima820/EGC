@@ -4,6 +4,7 @@ class CreateJobs < ActiveRecord::Migration[5.1]
       t.string :role
       t.string :project
       t.text :description
+      t.attachment :image
       t.timestamps
     end
   end

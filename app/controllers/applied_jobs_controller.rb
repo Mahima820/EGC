@@ -4,12 +4,13 @@ class AppliedJobsController < ApplicationController
   # GET /applied_jobs
   # GET /applied_jobs.json
   def index
-    @applied_jobs = AppliedJob.all
+    @applied_jobs = current_user.applied_jobs #AppliedJob.all
   end
 
   # GET /applied_jobs/1
   # GET /applied_jobs/1.json
   def show
+    @applied_job = AppliedJob.find(params[:id])
   end
 
   # GET /applied_jobs/new
@@ -24,11 +25,11 @@ class AppliedJobsController < ApplicationController
   # POST /applied_jobs
   # POST /applied_jobs.json
   def create
-    @applied_job = AppliedJob.new(applied_job_params)
+    @applied_job = AppliedJob.new(job_id: params[:job_id], user_id: current_user.id)
 
     respond_to do |format|
       if @applied_job.save
-        format.html { redirect_to @applied_job, notice: 'Applied job was successfully created.' }
+        format.html { redirect_to applied_jobs_path, notice: 'Applied job was successfully created.' }
         format.json { render :show, status: :created, location: @applied_job }
       else
         format.html { render :new }

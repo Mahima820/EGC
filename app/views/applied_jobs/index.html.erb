@@ -7,25 +7,29 @@
     <tr>
       <th>Resume</th>
       <th>Cover letter</th>
-      <th>Text</th>
-      <th colspan="3"></th>
+      <th>Job ID</th>
+      <th>User ID</th>
+      <th>Project</th>
+       <th colspan="5"></th>
     </tr>
   </thead>
-
-  <tbody>
+<tbody>
     <% @applied_jobs.each do |applied_job| %>
       <tr>
-        <td><%= applied_job.resume %></td>
-        <td><%= applied_job.cover_letter %></td>
-        <td><%= applied_job.text %></td>
-        <td><%= link_to 'Show', applied_job %></td>
-        <td><%= link_to 'Edit', edit_applied_job_path(applied_job) %></td>
-        <td><%= link_to 'Destroy', applied_job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <td><%= applied_job.user.resume %></td>
+        <td><%= applied_job.user.cover_letter %></td>
+        <td><%= applied_job.job_id %></td>
+        <td><%= applied_job.user_id %></td>
+        <td><%= applied_job.job.project %></td>
+        <td><%= applied_job.user.email %></td>
+        <td><%= link_to 'Show', applied_jobs_path %></td>
+        <td><%= link_to 'Edit', edit_job_path(applied_job) %></td>
+      <!--   <td><%= link_to 'Destroy', applied_jobs_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr> -->
     <% end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Applied Job', new_applied_job_path %>
+<%= link_to 'New Applied Job', new_job_path %>
