@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  # resources :carts
   devise_for :users
+  get 'profile' => 'users#profile', as: :profile
   post 'jobs/:job_id/apply' => 'applied_jobs#create', as: :apply_to_job
   resources :applied_jobs, only: [:index, :create]
   resources :jobs

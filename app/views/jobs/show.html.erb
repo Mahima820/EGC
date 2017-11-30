@@ -1,6 +1,8 @@
-<title>Modal Popup Box</title>
-
-<body>
+<body class="job_details">
+<div class="job_details_header">
+	<h1>Job Details</h1>
+</div>
+<div class="job_details_section">
   <strong>Role:</strong>
   <%= @job.role %>
 </p>
@@ -15,29 +17,7 @@
   <%= @job.description %>
 </p>
 <%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
+<%= link_to 'Back', jobs_path %> |
 <%= link_to 'Apply', apply_to_job_path(@job), method: :post %>
-<h1 style="text-align:center; font-size:50px; color:#fff">Modal Popup Box Login Form</h1>
-
-<button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:200px; margin-top:200px; margin-left:160px;">
-Apply</button>
-
-<div id="modal-wrapper" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php">
-        
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
-      <img src="1.png" alt="Avatar" class="avatar">
-      <h1 style="text-align:center">Modal Popup Box</h1>
-    </div>
-
-    <div class="container">
-      <input type="text" placeholder="Resume">
-      <input type="text" placeholder="Cover Letter">        
-      <button type="submit">Submit</button>     
- 
-    </div>
-    
-  </form>
+</div>
 </body>

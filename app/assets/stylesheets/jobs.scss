@@ -89,18 +89,58 @@ button:hover {
 }
 
 /*-----------Jobs Table---------------------*/
-
 .job_header {
-    margin-left: 200px;
+    color: white;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+.job_header h1 {
+    margin-left: 220px;
+}
+.job_postings {
+    margin-left: 150px;
+    background-image: asset-url('EGC_profile.png');
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 .jobs {
-    margin-left: 350px;
-    margin-top: 200px;
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: white;
+    opacity: .8;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .jobs th {
     padding-left: 300px;
 }
 
+/*-----------Jobs Details---------------------*/
+
+.job_details {
+    background-color: white;
+    background-image: asset-url('EGC_profile.png');
+    background-repeat: no-repeat;
+}
+.job_details_header {
+    margin-left: 600px;
+    margin-top: 100px;
+    color: white;
+}
+strong, b {
+    margin-left: 100px;
+}
+
+.job_details_section {
+    background-color: white;
+    opacity: 0.8;
+    margin-left: 150px;
+    margin-top: 100px;
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    padding: 20px;
+}
 
 

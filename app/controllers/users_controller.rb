@@ -12,6 +12,11 @@ class UsersController < ApplicationController
   def show
   end
 
+  def profile
+    @user = User.find(current_user.id)
+    render :show
+  end
+
   # GET /users/new
   def new
     @user = User.new

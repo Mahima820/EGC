@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20171127171454) do
     t.integer "photo_file_size"
     t.datetime "photo_updated_at"
     t.text "resume"
-    t.string "cover_letter"
+    t.text "cover_letter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false

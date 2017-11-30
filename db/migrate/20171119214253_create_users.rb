@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :interest
       t.attachment :photo
       t.text :resume
-      t.string :cover_letter
+      t.text :cover_letter
 
       t.timestamps
     end
