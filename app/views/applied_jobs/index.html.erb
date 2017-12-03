@@ -1,14 +1,15 @@
+<body class="Applied_Jobs">
 <p id="notice"><%= notice %></p>
 
-<h1>Applied Jobs</h1>
+<h1>Your Job History</h1>
 
-<table>
+<table div="applied_job_table">
   <thead>
     <tr>
       <th>Resume</th>
       <th>Cover letter</th>
-      <th>Job ID</th>
-      <th>User ID</th>
+      <!-- <th>Job ID</th>
+      <th>User ID</th> -->
       <th>Project</th>
        <th colspan="5"></th>
     </tr>
@@ -18,12 +19,12 @@
       <tr>
         <td><%= applied_job.user.resume %></td>
         <td><%= applied_job.user.cover_letter %></td>
-        <td><%= applied_job.job_id %></td>
-        <td><%= applied_job.user_id %></td>
+        <!-- <td><%= applied_job.job_id %></td>
+        <td><%= applied_job.user_id %></td> -->
         <td><%= applied_job.job.project %></td>
         <td><%= applied_job.user.email %></td>
         <td><%= link_to 'Show', applied_jobs_path %></td>
-        <td><%= link_to 'Edit', edit_job_path(applied_job) %></td>
+        <!-- <td><%= link_to 'Edit', edit_job_path(applied_job) %></td> -->
       <!--   <td><%= link_to 'Destroy', applied_jobs_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr> -->
     <% end %>
@@ -33,3 +34,4 @@
 <br>
 
 <%= link_to 'New Applied Job', new_job_path %>
+</body>

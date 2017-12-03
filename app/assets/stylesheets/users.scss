@@ -78,6 +78,9 @@ input[type="file" i] {
 }
 
 /*-----------------Profile Page ------------------*/
+.profile_word {
+   margin-top: 0px;
+}
 .background {
   background-image: asset-url('EGC_profile.png');
   /*background: linear-gradient(black, #2B0963, #080E4E);*/
@@ -99,14 +102,14 @@ input[type="file" i] {
 
 .profile_info {
   border-radius: 25px;
-  margin-top: -700px;
+  margin-top: -10px;
   margin-left: 150px;
   opacity: 0.7;
   color: white;
    background: linear-gradient(to bottom right, #C013B0, #5216B6, #132885, #1D88E1);
   /*background-color: white;*/
   width: 75%;
-  height: 600px;
+  height: 500px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #index {
@@ -127,7 +130,7 @@ background-image: asset-url('stars.gif');
 height: 100vh;
 width: 100%;
 position: relative;
-margin-top: -800px;
+margin-top: -900px;
 margin-left: 400px;
 position: relative;
 }
@@ -137,4 +140,5 @@ background-image: asset-url('stars.gif');
 height: 100vh;
 width: 100%;
 position: relative;
+margin-top: -900px;
 }
